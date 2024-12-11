@@ -5,7 +5,7 @@ INSERT INTO Visitantes (nome, data_nascimento, email) VALUES
 ('Guilherme', '01/12/1995', 'guilherme@gmail.com'),
 ('Francisco', '26/09/1989', 'francisco@gmail.com'),
 ('Graça', '01/09/1961', 'graca@gmail.com'),
-('Maria', '06/04/2010', 'maria@gmai.com');
+('Maria', '06/04/2010', 'maria@gmail.com');
 
 INSERT INTO Atracao (nome, tipo, capacidade) VALUES
 ('Barco Viking', 'radical', 40),
