@@ -37,3 +37,18 @@ SELECT * FROM Visitantes;
 SELECT * FROM Atracao;
 
 -- Consultas com Filtros (WHERE):
+
+SELECT V.id, V.nome, V.data_nascimento, V.email
+FROM Visitantes V
+JOIN Ingresso I ON V.id = I.Visitantes_id
+WHERE I.Atracao_id = 1;
+
+SELECT F.id, F.nome, F.cargo, F.salario, A.nome AS atracao_nome
+FROM Funcionario F
+JOIN Atracao A ON F.Atracao_id = A.id
+WHERE F.salario > 3000;
+
+-- Consultas com Ordenação (ORDER BY):
+
+SELECT * FROM Visitantes ORDER BY nome;
+SELECT * FROM Atracao ORDER BY capacidade DESC;
