@@ -52,3 +52,13 @@ WHERE F.salario > 3000;
 
 SELECT * FROM Visitantes ORDER BY nome;
 SELECT * FROM Atracao ORDER BY capacidade DESC;
+
+-- Consultas com Funções Básicas:
+
+SELECT AVG(salario) AS media_salarial FROM Funcionario;
+SELECT MAX(data_visita) AS data_mais_recente FROM Ingresso; 
+
+-- Consultas com manipulação de data e hora:
+
+SELECT * FROM Visitantes WHERE data_nascimento < '01/01/2000';
+SELECT nome, data_nascimento, EXTRACT(YEAR FROM AGE(data_nascimento)) AS idade FROM Visitantes;
